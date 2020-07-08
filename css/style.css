@@ -1,0 +1,65 @@
+/* header start */
+header {
+  background-color: #f0fff0;
+}
+#signIn {
+  height: 40px;
+  width: 90px;
+  padding: 0;
+}
+/* header end */
+
+/* intro start */
+#intro img {
+  width: 66px;
+  height: 85px;
+}
+#intro .card {
+  background: #f8fffb;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+#intro .card:hover {
+  background: #ffffff;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+/* intro end */
+
+/* course start */
+#course .card {
+  background: #ffffff;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  padding: 10px;
+  margin-top: 15px;
+}
+#course img {
+  padding: 10px;
+}
+#course .row > div {
+  padding: 20px;
+}
+/* course end */
+
+/* testimonial start */
+#testimonial h1 {
+  margin-top: 30px;
+}
+#testimonial p {
+  text-align: justify;
+}
+/* testimonial end */
+
+/* footer start */
+footer {
+  background: #282531;
+  color: white;
+}
+footer ul {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+}
+/* footer end */
