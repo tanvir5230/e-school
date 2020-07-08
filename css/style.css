@@ -74,6 +74,9 @@ header h1 {
 /* course end */
 
 /* testimonial start */
+#testimonial {
+  margin-bottom: 30px;
+}
 #testimonial h1 {
   margin-top: 60px;
 }
@@ -83,6 +86,30 @@ header h1 {
   padding: 10px;
   font-style: italic;
 }
+/* carousel */
+.carousel-indicators li {
+  background: rgb(223, 77, 77);
+  width: 10px;
+  height: 2px;
+  border-radius: 50%;
+}
+.carousel-item {
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+.carousel-indicators li.active {
+  background-color: #28a745;
+}
+.carousel-control-prev span {
+  color: black;
+  background-color: rgba(153, 149, 149, 0.5);
+}
+.carousel-control-next span {
+  color: black;
+  background-color: rgba(153, 149, 149, 0.5);
+}
+/* carousel */
+
 /* testimonial end */
 
 /* footer start */
