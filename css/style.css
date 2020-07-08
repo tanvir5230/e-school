@@ -6,14 +6,23 @@ header {
   width: 198px;
   height: 59px;
 }
+header .active {
+  border-bottom: 2px solid rgb(201, 48, 48);
+}
 #signIn {
   height: 40px;
   width: 90px;
   padding: 0;
 }
+#welcome-text h1 {
+  margin: 20px 0;
+}
 /* header end */
 
 /* intro start */
+#intro {
+  margin-bottom: 30px;
+}
 #intro img {
   width: 66px;
   height: 85px;
@@ -31,6 +40,9 @@ header {
 /* intro end */
 
 /* course start */
+#course {
+  margin-bottom: 40px;
+}
 #course .card {
   background: #ffffff;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
@@ -52,6 +64,8 @@ header {
 }
 #testimonial p {
   text-align: justify;
+  font-size: 1.1rem;
+  padding: 10px;
 }
 /* testimonial end */
 
