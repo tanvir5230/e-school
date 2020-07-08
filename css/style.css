@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
 /* header start */
 header {
   background-color: #f0fff0;
@@ -13,6 +18,9 @@ header .active {
   height: 40px;
   width: 90px;
   padding: 0;
+}
+header h1 {
+  font-size: 2.5rem;
 }
 #welcome-text h1 {
   margin: 20px 0;
@@ -43,29 +51,26 @@ header .active {
 #course {
   margin-bottom: 40px;
 }
+#course h1 {
+  margin-bottom: 30px;
+}
 #course .card {
   background: #ffffff;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
   border-radius: 18px;
-  padding: 10px;
-  margin-top: 15px;
 }
-#course img {
-  padding: 10px;
-}
-#course .row > div {
-  padding: 20px;
-}
+
 /* course end */
 
 /* testimonial start */
 #testimonial h1 {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 #testimonial p {
   text-align: justify;
   font-size: 1.1rem;
   padding: 10px;
+  font-style: italic;
 }
 /* testimonial end */
 
@@ -74,6 +79,8 @@ footer {
   background: #282531;
   color: white;
   padding-top: 30px;
+  position: static;
+  bottom: 0;
 }
 footer ul {
   list-style: none;
