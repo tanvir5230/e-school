@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- go to top -->
+    <a
+      href="#"
+      class="btn btn-danger font-weight-bolder font-monospace rounded-circle position-fixed"
+      id="go-top"
+    >
+      &uparrow;
+    </a>
+    <!-- go to top -->
+
     <!-- header start-->
     <header>
       <!-- navbar -->
@@ -33,6 +43,8 @@
               <button
                 id="signIn"
                 class="btn btn-success px-3 rounded-pill ml-auto mr-2 order-0 border align-self-center"
+                data-toggle="modal"
+                data-target="#modalLoginForm"
               >
                 sign in
               </button>
@@ -47,7 +59,7 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Courses</a>
+                  <a class="nav-link" href="#course">Courses</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Others</a>
@@ -169,7 +181,7 @@
         <h1 class="text-center">Online Courses</h1>
         <div class="row justify-content-center align-items-center">
           <div class="col-md-4">
-            <div class="card border-0">
+            <div class="card order-0">
               <!-- Card image -->
               <img
                 class="card-img-top p-3"
@@ -377,19 +389,19 @@
               <div class="col-md-3 mb-md-0 mb-3">
                 <h3>Course</h3>
                 <ul class="p-0">
-                  <a href="">
+                  <a href="#">
                     <li>Graphic Design</li>
                   </a>
-                  <a href="">
+                  <a href="#">
                     <li>Web Design</li>
                   </a>
-                  <a href="">
+                  <a href="#">
                     <li>Business</li>
                   </a>
-                  <a href="">
+                  <a href="#">
                     <li>Marketing</li>
                   </a>
-                  <a href="">
+                  <a href="#">
                     <li>Engineering</li>
                   </a>
                 </ul>
@@ -400,19 +412,19 @@
               <div class="col-md-3 mb-md-0 mb-3">
                 <h3>Teams</h3>
                 <ul class="p-0">
-                  <a href="">
+                  <a href="#">
                     <li>Graphic Design</li>
                   </a>
-                  <a href="">
+                  <a href="#">
                     <li>Web Design</li>
                   </a>
-                  <a href="">
+                  <a href="#">
                     <li>Business</li>
                   </a>
-                  <a href="">
+                  <a href="#">
                     <li>Marketing</li>
                   </a>
-                  <a href="">
+                  <a href="#">
                     <li>Engineering</li>
                   </a>
                 </ul>
@@ -421,19 +433,19 @@
               <div class="col-md-3 mb-md-0 mb-3">
                 <h3>Useful links</h3>
                 <ul class="p-0">
-                  <a href="">
+                  <a href="#">
                     <li>Graphic Design</li>
                   </a>
-                  <a href="">
+                  <a href="#">
                     <li>Web Design</li>
                   </a>
-                  <a href="">
+                  <a href="#">
                     <li>Business</li>
                   </a>
-                  <a href="">
+                  <a href="#">
                     <li>Marketing</li>
                   </a>
-                  <a href="">
+                  <a href="#">
                     <li>Engineering</li>
                   </a>
                 </ul>
@@ -452,6 +464,55 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
+
+    <div
+      class="modal fade"
+      id="modalLoginForm"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body mx-3">
+            <div class="mb-5">
+              <input
+                type="email"
+                id="defaultForm-email"
+                class="form-control validate"
+                placeholder="your email"
+                required
+              />
+            </div>
+
+            <div class="mb-4">
+              <input
+                type="password"
+                id="defaultForm-pass"
+                class="form-control"
+                placeholder="your password"
+                required
+              />
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button class="btn btn-success px-5">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- script start -->
     <script src="css/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- script end-->
